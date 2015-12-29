@@ -75,6 +75,7 @@
     -ms-flex-align: center;
     align-items: center;
     color: #000;
+    overflow: auto;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
