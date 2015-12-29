@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="tutorials">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>triangular studios</title>
+
+    <!-- page styles---->
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-indigo.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="css/pro.css">
+    <script src="js/material.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/ZeroClipboard.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/pro.js"></script>
+  </head>
+  <body style="font-family:Roboto,sans-serif;">
+       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <div class="mdl-layout-spacer"></div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                          mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                  <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                  <input class="mdl-textfield__input" type="text" name="sample"
+                         id="fixed-header-drawer-exp">
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+          </div>
+          <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+            <div class="typo-styles__demo mdl-typography--display-1">How to:</div><br>
+            <div class="typo-styles__demo mdl-typography--headline">Download Library</div>
+            <p>Click on following button to download the library. This library is .aar file. You need to include this library inside your android project. <br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Download Library
+            </button></p>
+            <div class="typo-styles__demo mdl-typography--headline">Generate API Key</div>
+            <p>Please sign up on our platform in order to register yourself as developer. After signing up, please create the profile for your application using following link.<br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Create Application
+            </button></p>
+            <p>If your Application already exists on our platform, then <a href="">contact us</a> to claim your application.</p>
+            <br>
+            <p>After your account has been created, you will be able to see API key in your account.</p>
+            <div class="typo-styles__demo mdl-typography--headline">Configure Library</div>
+            <p>You need to configure this API key in your resources folder. Generally, you need to configure inside <code class="str">strings.xml</code> file which is located in <code class="str">app / res / values /  strings.xml</code> </p>
+            <pre>
+                <code id="clipboard-text"><div class="corner" style="float:right;"><button class="mdl-button btn mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text" onclick="myFunction()">
+                  <i id="btn" class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn">Click To Copy</div>
+                  <span class="black">&lt?</span><span class="prpl">xml version=</span><span class="green">"1.0"</span><span class="prpl">encoding=</span><span class="green">"utf-8"</span><span class="black">&gt</span>
+                  <span class="black">&ltresources&gt</span>
+                  <span class="tag">&nbsp&nbsp&nbsp&ltstring</span><span class="prpl"> name=</span><span class="green">"api"</span><span class="tag">&gt</span><span>cks2374ns3n2jb2b5h3b5353bk1bb52</span><span class="tag">&lt/string&gt</span>
+                  <span class="black"><span class="black">&ltresources&gt</span>
+                </code>
+            </pre>
+            <br>
+            <p>After configuring API key, you can use our tutorial view in side your activity using our custom view.</p>
+            <br>
+            <pre>
+                <code id="clipboard-text"><div class="corner" style="float:right;"><button class="mdl-button btn mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text" onclick="myFunction()">
+                  <i id="btn1" class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                    <span class="black">&lt tuteeasy.lib.triangular.view.TuteView</span>
+                    <span class="prpl">&nbsp &nbsp android:</span><span class="tag">id=</span><span class="green">"@+id/tuteview"</span>
+                    <span class="prpl">&nbsp &nbsp android:</span><span class="tag">layout_width=</span><span class="green">"wrap_content"</span>
+                    <span class="prpl">&nbsp &nbsp android:</span><span class="tag">layout_height=</span><span class="green">"match_parent"</span>
+                    <span class="prpl">&nbsp &nbsp android:</span><span class="tag">api=</span><span class="green">"@string/api"</span>&nbsp <span class="black">/&gt</span>
+                </code>
+            </pre>
+            <br>
+            <p><b>Note:</b> You need to set correct API key in <code><span class="prpl">android:</span><span class="tag">api</span></code>otherwise tutorial will not show </p>
+            <div class="typo-styles__demo mdl-typography--headline">Showing Tutorial List</div>
+            <p>You can use our Tutorial List api, to get list of tutorials for your account. Later, you can show this data using any type of list view.
+            <br>
+            A General JSON response of Tutorial List API looks like this. </p>
+            </div>
+            <a href="index.html"><i class="material-icons" style="float:right">arrow_back</i></a>
+          </main>
+        </div>
+      </body>
+    </html>

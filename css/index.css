@@ -1,0 +1,131 @@
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+.con{
+        padding-top: 10px;
+    }
+.coni{
+        padding-top: 5px;
+    }
+@media (max-width: 479px)
+.mdl-cell {
+    margin-left: 0px;
+    width: calc(100% - 16px);
+}
+.mdl-textfield {
+    width: 90%;
+    max-width: 100%;
+}
+.mdl-textfield__label {
+    color: #9e9e9e;
+    }
+    .material-icons {
+    vertical-align: middle;
+}
+#back-to-top {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+.demo-card-wide.mdl-card {
+    
+        }
+.mdl-card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100px;
+    overflow: hidden;
+    width: auto;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.mdl-card__supporting-text {
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0px;
+    width:95%;
+}
+.triangular-content{
+}
+.mdl-card__title {
+    -webkit-box-align: center;
+    align-self: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    line-height: normal;
+    padding: 16px;
+    -webkit-perspective-origin: 165px 56px;
+    perspective-origin: 165px 56px;
+    -webkit-transform-origin: 165px 56px;
+    -ms-transform-origin: 165px 56px;
+    transform-origin: 165px 56px;
+    box-sizing: border-box;
+}
+.triangular-content{
+  text-align:center;
+  max-width: 950px;
+}
+.mdl-grid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+.mdl-layout__content {
+    -ms-flex: 0 1 auto;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow:inherit;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+
+

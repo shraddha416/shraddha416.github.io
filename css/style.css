@@ -1,0 +1,108 @@
+body{
+	margin:0px 0px 0px 0px;
+}
+.ts-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+footer {
+
+position:relative;
+
+left: 0;
+
+right: 0;
+
+bottom: 0;
+
+}
+.social-btn__blogger {
+    background-image:url("f.png");
+    }
+.social-btn__twitter{
+	background-image:url("twitter.png");
+}
+.social-btn__gplus{
+	background-image:url("g.png");
+}
+.social-btn {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 2px;
+    }
+.mdl-textfield--expandable {
+    min-width: 32px;
+    width: auto;
+    min-height: 32px;
+    padding:24px 20px;
+}
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: rgb(33,150,243);
+    border-color: rgb(33,150,243);
+    border: 5px rgb(33,150,243);
+    text-align: center;
+    font-size: 25px;
+}
+.panel-body {
+    padding: 15px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    color:rgb(83,109,254);
+    font-weight: 600px;
+    border: 2px rgb(83,109,254);
+
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color: rgba(33,150,243,0.9);
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color:#fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+.panel-head-inside{
+    background-color: rgba(33,150,243,0.4);
+    font-size: 20px;
+    color:rgb(83,109,254);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.before-head{
+    font-size:25px;
+    font-weight: 300;
+    color:rgb(83,109,254);
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.shadow{
+    box-shadow:0px 0px 40px rgb(33,150,243);
+}
+.mdl-layout__content {
+    -ms-flex: 0 1 auto;
+    display: inline-block;
+    overflow-y: visible;
+    overflow-x: hidden;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
