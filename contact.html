@@ -15,6 +15,31 @@
 <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <script src="js/material.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <style>
+    .mdl-card__title {
+    -webkit-box-align: center;
+    align-self: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    line-height: normal;
+    padding: 16px;
+    -webkit-perspective-origin: 165px 56px;
+    perspective-origin: 165px 56px;
+    -webkit-transform-origin: 165px 56px;
+    -ms-transform-origin: 165px 56px;
+    transform-origin: 165px 56px;
+    box-sizing: border-box;
+}
+    </style>
   <!--  <script src="js/jquery.mobile-1.4.5.js"></script>---->
   <style>
   .mdl-textfield {
@@ -35,7 +60,34 @@
     padding: 16px;
     width: 90%;
 }
-
+.mdl-textfield__input {
+    /* border: 1px; */
+    border: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+}
+.mdl-textfield__label {
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 24px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    padding: 0 5px;
+}
   </style>
    <script>
     </script>
