@@ -55,7 +55,7 @@
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    width: 240px;
+    width: 200px;
     height: 100%;
     max-height: 100%;
     position: absolute;
@@ -91,9 +91,17 @@ body{
     color: #757575 !important;
     font-size:25px;
 }
-.mdl-layout--fixed-drawer>.mdl-layout__content {
-    margin-left: 240px;
-    padding: 40px;
+@media only screen and (min-width: 1050px) {
+    .mdl-layout--fixed-drawer>.mdl-layout__content {
+      margin-left: 200px;
+      padding: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+    .page-content {
+      margin: 10px;
+}
+
 }
 .mdl-typography--headline, .mdl-typography--headline-color-contrast {
     font-family: "Roboto","Helvetica","Arial",sans-serif;

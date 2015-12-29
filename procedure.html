@@ -16,7 +16,6 @@
     <script src="js/material.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
-    <script src="js/ZeroClipboard.js"></script>
     <script src="js/clipboard.js"></script>
     <script src="js/pro.js"></script>
   </head>
@@ -67,8 +66,9 @@
             <div class="typo-styles__demo mdl-typography--headline">Configure Library</div>
             <p>You need to configure this API key in your resources folder. Generally, you need to configure inside <code class="str">strings.xml</code> file which is located in <code class="str">app / res / values /  strings.xml</code> </p>
             <pre>
-                <code id="clipboard-text"><div class="corner" style="float:right;"><button class="mdl-button btn mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text" onclick="myFunction()">
-                  <i id="btn" class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn">Click To Copy</div>
+                <div class="corner" style="float:right;"><button class="mdl-button btn1 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text1" onclick="myFunction1()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn">Click To Copy</div>
+                <code id="clipboard-text1">
                   <span class="black">&lt?</span><span class="prpl">xml version=</span><span class="green">"1.0"</span><span class="prpl">encoding=</span><span class="green">"utf-8"</span><span class="black">&gt</span>
                   <span class="black">&ltresources&gt</span>
                   <span class="tag">&nbsp&nbsp&nbsp&ltstring</span><span class="prpl"> name=</span><span class="green">"api"</span><span class="tag">&gt</span><span>cks2374ns3n2jb2b5h3b5353bk1bb52</span><span class="tag">&lt/string&gt</span>
@@ -79,8 +79,9 @@
             <p>After configuring API key, you can use our tutorial view in side your activity using our custom view.</p>
             <br>
             <pre>
-                <code id="clipboard-text"><div class="corner" style="float:right;"><button class="mdl-button btn mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text" onclick="myFunction()">
-                  <i id="btn1" class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+              <div class="corner" style="float:right;"><button class="mdl-button btn2 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text2" onclick="myFunction2()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                <code id="clipboard-text2">
                     <span class="black">&lt tuteeasy.lib.triangular.view.TuteView</span>
                     <span class="prpl">&nbsp &nbsp android:</span><span class="tag">id=</span><span class="green">"@+id/tuteview"</span>
                     <span class="prpl">&nbsp &nbsp android:</span><span class="tag">layout_width=</span><span class="green">"wrap_content"</span>
