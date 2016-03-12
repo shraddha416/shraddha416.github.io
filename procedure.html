@@ -38,12 +38,12 @@
             </div>
           </header>
           <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
+            <span class="mdl-layout-title">TuteEasy</span>
             <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="#import">Import a AAR File</a>
+              <a class="mdl-navigation__link" href="#build">build.gradle</a>
+              <a class="mdl-navigation__link" href="#android">Android</a>
+              <a class="mdl-navigation__link" href="#off">Offline Tippie</a>
             </nav>
           </div>
           <main class="mdl-layout__content">
@@ -96,6 +96,116 @@
             <br>
             A General JSON response of Tutorial List API looks like this. </p>
             </div>
+            <div class="typo-styles__demo mdl-typography--headline" id="import">How to Import a AAR File:</div>
+            <ol>
+            <li>Go to File</li>
+            <li>Click on New</li>
+            <li>Click on New Module</li>
+            <li>Select Import Library AAR/JAR</li>
+            <li>Locate the Library</li>
+            <li>Click on Finish.</li></ol>
+            <p>More info available at:
+                        <a href="http://stackoverflow.com/questions/24506648/addinglocalaarfilestogradlebuildusingflatdirsisnotworking"> http://stackoverflow.com/questions/24506648/addinglocalaarfilestogradlebuildusingflatdirsisnotworking</a>
+                      </p>
+           <br>
+            <div class="typo-styles__demo mdl-typography--headline" id="build">Put these entries in build.gradle(at module level):</div>
+            <pre>
+                <div class="corner" style="float:right;"><button class="mdl-button btn3 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text3" onclick="myFunction3()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn">Click To Copy</div>
+                <code id="clipboard-text3">
+                  <span class="black">compile</span></span><span class="green">'com.android.support:appcompatv7: 23.1.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.android.support:design:23.1.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.android.support:cardviewv7:23.1.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.android.support:recyclerviewv7:23.1.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.android.support:supportv4: 23.1.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.google.code.gson:gson:2.3'</span>
+                  <span class="black">compile</span></span><span class="green">'com.squareup:otto:1.3.8'</span>
+                  <span class="black">compile</span></span><span class="green">'com.squareup.retrofit:retrofit:2.0.0beta2'</span>
+                  <span class="black">compile</span></span><span class="green">'com.squareup.retrofit:convertergson: 2.0.0beta2'</span>
+                  <span class="black">compile</span></span><span class="green">'com.squareup.okhttp3:okhttp:3.0.1'</span>
+                  <span class="black">compile</span></span><span class="green">'com.github.bumptech.glide:glide:3.5.2'</span>
+                  <span class="black">compile</span></span><span class="green"> project(':tippiepro')</span>
+                </code>
+              </pre>
+                <b>Note:</b> If you are using eclipse setup, then download .jar libraries from <a>http://mvnrepository.com/</a>
+                and add them to project externally.<br>
+            <div class="typo-styles__demo mdl-typography--headline" id="android">Put following entries of Activities and Services in AndroidManifest.xml</div>
+            <pre>
+              <div class="corner" style="float:right;"><button class="mdl-button btn4 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text4" onclick="myFunction4()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                <code id="clipboard-text4">
+                    <span class="black">&ltactivity </span><span class="prpl">android:name </span><span class="green">"io.tippie.pro.ui.activity.IntroTuteViewActivity"</span>
+                    <span class="prpl">android:screenOrientation</span><span class="green">="portrait"</span>
+                    <span class="prpl">android:theme</span><span class="green">="@style/AppTheme.NoActionBar"></span>
+                    <span class="black">&lt/activity&gt</span>
+                    <span class="black">&ltactivity </span><span class="prpl">android:name </span><span class="green">="io.tippie.pro.ui.activity.TuteViewActivity"</span>
+                    <span class="prpl">android:screenOrientation</span><span class="green">="portrait"</span>
+                    <span class="prpl">android:theme</span><span class="green">=android:theme="@style/AppTheme.NoActionBar"></span>
+                    <span class="black">&lt/activity&gt</span>
+                    <span class="black">&ltactivity </span><span class="prpl">android:name </span><span class="green">="io.tippie.pro.ui.activity.UserTuteListActivity"</span>
+                    <span class="prpl">android:screenOrientation</span><span class="green">="portrait"</span>
+                    <span class="prpl">android:theme</span><span class="green">=android:theme="@style/AppTheme.NoActionBar"></span>
+                    <span class="black">&lt/activity&gt</span>
+                    <span class="black">&ltservice </span><span class="prpl">android:name </span><span class="green">="io.tippie.pro.service.CacheTutorialService"</span>
+                    <span class="prpl">android:enabled</span><span class="green">="true"/></span>
+              </code>
+            </pre>
+            <br>
+            <div class="typo-styles__demo mdl-typography--headline">Put following entries of permissions in AndroidManifest.xml:</div>
+            <pre>
+              <div class="corner" style="float:right;"><button class="mdl-button btn5 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text5" onclick="myFunction5()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                <code id="clipboard-text5">
+                    <span class="prpl">&ltuses-permission android:name </span><span class="green">="android.permission.INTERNET" /></span>
+                    <span class="prpl">&ltuses-permission android:name </span><span class="green">="android.permission.ACCESS_NETWORK_STATE" /></span>
+                </code>
+            </pre>
+            <br>
+            <div class="typo-styles__demo mdl-typography--headline">Put credentials in AndroidManifest.xml</div>
+            <pre>
+              <div class="corner" style="float:right;"><button class="mdl-button btn7 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text7" onclick="myFunction7()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                <code id="clipboard-text7">
+                  <span class="black">&ltmetaname</span><span class="prpl">android:name </span><span class="green">="io.tippie.pro.username"</span>
+                    <span class="prpl">android:value</span><span class="green">="io.tippie.pro.username"/></span>
+                    <span class="black">&ltmetaname</span><span class="prpl">android:name </span><span class="green">="io.tippie.pro.password"</span>
+                    <span class="prpl">android:value</span><span class="green">="@string/tippie_password" /></span>
+                </code>
+            </pre>
+            <br>
+            <div class="typo-styles__demo mdl-typography--headline">Save your Tippie SDK credentials in Strings.xml file</div>
+            <pre>
+              <div class="corner" style="float:right;"><button class="mdl-button btn6 mdl-js-button mdl-button--icon mdl-button--colored" data-clipboard-target="#clipboard-text6" onclick="myFunction6()">
+                  <i class="material-icons">assignment</i></button></div><div class="mdl-tooltip" for="btn1">Click To Copy</div>
+                <code id="clipboard-text6">
+                    <span class="prpl">&ltstring </span> <span class="tag">name</span><span class="green">="tippie_username"></span><span class="black">abc@gmail.com</span><span class="prpl">&lt/string&gt</span>
+                    <span class="prpl">&ltstring </span> <span class="tag">name</span><span class="green">="tippie_password"></span><span class="black">password</span><span class="prpl">&lt/string&gt</span>                    
+                </code>
+            </pre>
+            <br>
+            <div class="typo-styles__demo mdl-typography--headline" id="off">How to include a offline Tippie:</div>
+            <ol><li> Make <span class="blue"> assets " </span>folder inside <span class="blue">" main"</span> .</li>
+              <li> Inside, assets folder, Make<span class="blue"> tippies "</span> folder.</li>
+              <li> Inside tippies folder, copy the .tips file provided by us.</li>
+              <b>Note:</b> name of .tips file is its unique identifier( of type long). e.g. 1234456.tips. So, do not change names of .tips file provided by us.</ol>
+              <br>
+            <div class="typo-styles__demo mdl-typography--headline"></b>Procedures:</b></div>
+            <div class="typo-styles__demo mdl-typography--headline">1. Initialize SDK </div>
+            <p>in onCreate() function before launching any tutorial write following code.</p>
+            <pre><code><span class="green">TippieSDK.initialize(this);<span></pre></code>
+            <div class="typo-styles__demo mdl-typography--headline">2. Launch a Tippie </div>
+            Use this method to directly launch a Tippie.
+            <br>
+            <span class="prpl"><pre>TippieSDK.launchTippie (l ong tippieId ,String languagePack ,int tippieType ,booleanisOnline,int requestId,Context context);</pre></span>
+            e.g.<span class="green">TippieSDK.launchTippie(1456610546, "em", TippieSDK.TIPPIE_INTRO, false,ONBOARDING_REQUEST_CODE, MainActivity.this);</span>
+            <br><br>
+            <b>More about Input Parameters:</b><br>
+            <span class="green">tippieId :</span> id of tippie. If you are including offline tippie, it is the name of .tips file. e.g. for 1234567.tips file, 1234567 is the tippie id.<br>
+            <span class="green">languagePack :</span> it is two letter code for language pack. e.g. "en" for English, "hi" for Hindi,"mr" for Marathi. If your tippie is not langpack specific use "em" (Empty langpack).<br>
+            <span class="green">tippieType :</span> represents type of Tippie. currently we support only two formats e.g.TippieSDK.TYPE_DEFAULT or TippieSDK.TYPE_INTRO<br>
+            <span class="green">isOnline :</span> true if you are trying to load tippie from internet (i.e. our server).false if you have included .tips file in <span class="blue">" assets/tippies/ "</span> folder <br>
+            <span class="green">context :</span> Current context of the activity.<br>
+            <br>     
             <a href="index.html"><i class="material-icons" style="float:right">arrow_back</i></a>
           </main>
         </div>

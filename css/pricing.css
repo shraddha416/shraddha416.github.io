@@ -1,5 +1,8 @@
+.mdl-grid{
+    width:950px;
+}
 .demo-card-wide.mdl-card {
-  width: 80%;
+  width: 90%;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;

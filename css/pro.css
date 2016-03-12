@@ -89,7 +89,6 @@
 }
 body{
     color: #757575 !important;
-    font-size:25px;
 }
 @media only screen and (min-width: 1050px) {
     .mdl-layout--fixed-drawer>.mdl-layout__content {

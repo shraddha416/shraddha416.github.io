@@ -8,6 +8,7 @@
     <title>triangular studios</title>
 
     <!-- page styles---->
+
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-indigo.min.css" />
@@ -38,6 +39,9 @@
     -ms-transform-origin: 165px 56px;
     transform-origin: 165px 56px;
     box-sizing: border-box;
+}
+.mdl-grid{
+    width:950px;
 }
     </style>
   <!--  <script src="js/jquery.mobile-1.4.5.js"></script>---->
@@ -95,57 +99,52 @@
    <body style="font-family:Roboto,sans-serif;">
         <div class="typo-styles__demo mdl-typography--display-1" align="center">About Us</div><br>
         <div class="typo-styles__demo mdl-typography--display-1" align="center">Contact Us</div><br>
-        <div class="mdl-grid">
-            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
+        <div class="mdl-grid" align='center'>
+            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" align="center">
               <div class="mdl-card__supporting-text">
                     <img src="c.png" height="100px" width="100px"><br>
                     <div class="footer-add"  style="vertical-align:middle;"><br>
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--1-col-phone">
+                            <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
                                 <i class="material-icons">location_on</i>&nbsp Address<br>
                             </div>
-                            <div class="mdl-cell mdl-cell--8-col mdl-cell--5-col-tablet mdl-cell--3-col-phone" align="left">
-                                :CM-12, 3rd Floor, SINE, CSRE building,<br> IIT Bombay, Powai - 400076
+                            <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
+                                :CM-12, 3rd Floor, SINE, CSRE building, IIT Bombay, Powai - 400076
                             </div>
                         </div> 
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--1-col-phone">
+                            <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
                                 <i class="material-icons">phone</i>&nbsp Phone Number<br>
                             </div>
-                            <div class="mdl-cell mdl-cell--8-col mdl-cell--5-col-tablet mdl-cell--3-col-phone" align="left">
+                            <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
                                 :+91 9167941487
                             </div>
                         </div> 
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--1-col-phone">
+                            <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
                                 <i class="material-icons">email</i>&nbsp Email<br>
                             </div>
-                            <div class="mdl-cell mdl-cell--8-col mdl-cell--5-col-tablet mdl-cell--3-col-phone" align="left">
+                            <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
                                 :work@triangularstudios.com 
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>  
-            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
+            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" align="center">
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">Stay With Us</h2>
               </div>
               <div class="mdl-card__supporting-text">
                 <form action="#">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="name">
-                                <label class="mdl-textfield__label" for="name">Your Name...</label>
-                            </div>
-                        </div>
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="email">
-                                <label class="mdl-textfield__label" for="email">Email...</label>
-                            </div>
-                        </div>
+                    <div class="">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="name">
+                            <label class="mdl-textfield__label" for="name">Your Name...</label>            
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="email">
+                        <label class="mdl-textfield__label" for="email">Email...</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield">
                         <input class="mdl-textfield__input" type="text" id="subject">
@@ -158,6 +157,7 @@
                     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
                         Send Message
                     </button>
+                </div>
                 </form>       
               </div> 
             </div>
