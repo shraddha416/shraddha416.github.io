@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-indigo.min.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="css/index.css">
     <script src="js/material.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/index.js"></script>
     <script>
+    smoothScroll.init();
+
     $(document).ready(function(){
      });
     </script>
@@ -37,7 +39,7 @@
           <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="mdl-navigation__link" href="#services">Services</a>
             <a class="mdl-navigation__link" href="#procedure">Procedure</a>
-            <a class="mdl-navigation__link" href="pricing.html">Pricing</a>
+            <a class="mdl-navigation__link" href="pricing.html" >Pricing</a>
             <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
           </nav>
         </div>
@@ -53,7 +55,7 @@
       </div>
       <main class="mdl-layout__content">
         <div class="large-image" align="center">
-          <img src="1.png" width="930px" height="100%" class="lazy">
+          <img src="img/1.png" width="930px" height="100%" class="lazy">
         </div><br>
         <div class="triangular-content mdl-grid" align="center">
         <!---customer type---->
@@ -61,7 +63,7 @@
                   <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet" id="internal-customer">
                     <div class="mdl-grid">
                       <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
-                        <img src="internal.gif" width="150px" height="150px" style="">
+                        <img src="img/internal.gif" width="150px" height="150px" style="">
                       </div>
                       <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet">
                         <div class="mdl-card__title">
@@ -82,7 +84,7 @@
                   <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet" id="external-customer">
                     <div class="mdl-grid">
                       <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
-                        <img src="end.png" width="150px" height="150px" style="">
+                        <img src="img/end.png" width="150px" height="150px" style="">
                       </div>
                       <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet">
                         <div class="mdl-card__title">
@@ -110,7 +112,7 @@
                   <div class="mdl-card__supporting-text">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" align="center">
-                            <img src="mag.png" height="100px" width="100px" class="lazy">
+                            <img src="img/mag.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone">
                             <div class="typo-styles__demo mdl-typography--title">DEMISTIFY</div>
@@ -124,7 +126,7 @@
                     </div>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" align="center">
-                            <img src="ha.png" height="100px" width="100px" class="lazy">
+                            <img src="img/ha.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone">
                             <div class="typo-styles__demo mdl-typography--title">HAND-HOLD</div>
@@ -137,7 +139,7 @@
                     </div>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" align="center">
-                            <img src="convert.png" height="100px" width="100px" class="lazy">
+                            <img src="img/convert.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone">
                             <div class="typo-styles__demo mdl-typography--title">CONVERT</div>
@@ -150,7 +152,7 @@
                     </div>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" align="center">
-                            <img src="learn.png" height="100px" width="100px" class="lazy">
+                            <img src="img/learn.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone">
                             <div class="typo-styles__demo mdl-typography--title">LEARN</div>
@@ -163,7 +165,7 @@
                     </div>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" align="center">
-                            <img src="retain.png" height="100px" width="100px" class="lazy">
+                            <img src="img/retain.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone">
                             <div class="typo-styles__demo mdl-typography--title">RETAIN</div>
@@ -187,7 +189,7 @@
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" id="imga" align="center">
-                            <img src="train.png" height="100px" width="100px" class="lazy">
+                            <img src="img/train.png" height="100px" width="100px" class="lazy">
                         </div>
                         <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone coni">
                             <div class="typo-styles__demo mdl-typography--title">TRAIN</div>
@@ -202,7 +204,7 @@
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                     <div class="mdl-grid">
                           <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--4-col-phone" id="imga" align="center">
-                              <img src="change.png" height="100px" width="100px" class="lazy">
+                              <img src="img/change.png" height="100px" width="100px" class="lazy">
                           </div>
                           <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet con mdl-cell--4-col-phone coni">
                               <div class="typo-styles__demo mdl-typography--title">CHANGE</div>
@@ -227,17 +229,17 @@
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="">
-                    <img src="create.png" height="380px" width="200px" class="lazy">
+                    <img src="img/create.png" height="380px" width="200px" class="lazy">
                   </div>
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding-top:20px;">
                       <div align="left">
-                            <img src="t1.png" width="25px" height="25px">&nbsp Comapatible on smartphones.<br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp Engaging<br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp Use of localized words <br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp For any kind of App<br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp Suitable for low speed internet <br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp Adaptable to learning speed of user. <br><br>
-                            <img src="t1.png" width="25px" height="25px">&nbsp Easily sharable to motivate users. <br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Comapatible on smartphones.<br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Engaging<br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Use of localized words <br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp For any kind of App<br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Suitable for low speed internet <br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Adaptable to learning speed of user. <br><br>
+                            <img src="img/t1.png" width="25px" height="25px">&nbsp Easily sharable to motivate users. <br><br>
                       </div>
                   </div> 
                 </div>          
@@ -254,11 +256,11 @@
                 <div class="mdl-grid">  
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
                         <div class="typo-styles__demo mdl-typography--title">tutorial 1</div>
-                        <img src="create.gif" height="300px" width="300px" class="lazy">
+                        <img src="img/create.gif" height="300px" width="300px" class="lazy">
                     </div><br>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
                       <div class="typo-styles__demo mdl-typography--title">Tutorial 2</div>
-                        <img src="create.gif" height="300px" width="300px" class="lazy">
+                        <img src="img/create.gif" height="300px" width="300px" class="lazy">
                     </div><br>
                 </div><br>
               </div>
@@ -273,17 +275,17 @@
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">  
                       <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                          <img src="integrate.png" height="200px" width="200px" class="lazy"><br><br>
+                          <img src="img/integrate.png" height="200px" width="200px" class="lazy"><br><br>
                           <div class="typo-styles__demo mdl-typography--title">Integrate</div><br>
                           <p>Integrate the Tippie Library into your code.<br><a href="procedure.html">See how</a></p>
                       </div>
                       <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
-                          <img src="createb.png" height="200px" width="200px" class="lazy"><br><br>
+                          <img src="img/createb.png" height="200px" width="200px" class="lazy"><br><br>
                           <div class="typo-styles__demo mdl-typography--title">Create</div><br>
                           <p>Begin creating tutorials like a pro.<br>No stress.</p>
                       </div>
                       <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                          <img src="captivate.png" height="200px" width="200px" class="lazy"><br><br>
+                          <img src="img/captivate.png" height="200px" width="200px" class="lazy"><br><br>
                           <div class="typo-styles__demo mdl-typography--title">Captivate</div><br>
                           <p>Hit Launch and Begin <br>a beautiful new relationship with your users.</p>
                       </div>
@@ -305,7 +307,7 @@
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">  
                   <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" align="center">
-                      <img src="understand.png" height="100px" width="100px" class="lazy"><br><br>
+                      <img src="img/understand.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Understanding your UI</div><br>
                       <p id="addons">
                               unraveling complexities in UI <br>
@@ -313,7 +315,7 @@
                       </p>
                   </div>
                   <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" align="center" style="">
-                      <img src="design.png" height="100px" width="100px" class="lazy"><br><br>
+                      <img src="img/design.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Instruction Design</div><br>
                       <p id="addons">
                               Conducting User Studies <br>
@@ -322,7 +324,7 @@
                       </p>
                   </div>
                   <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                      <img src="local.png" height="100px" width="100px" class="lazy"><br><br>
+                      <img src="img/local.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Localisation</div><br>
                       <p id="addons">
                           
@@ -336,7 +338,7 @@
                   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
                   </div>
                   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
-                      <img src="production.png" height="100px" width="100px" class="lazy"><br><br>
+                      <img src="img/production.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Production & Hosting</div><br>
                       <p id="addons">
                           Sound production <br>
@@ -344,7 +346,7 @@
                       </p>
                   </div>
                   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
-                      <img src="support.png" height="100px" width="100px" class="lazy"><br><br>
+                      <img src="img/support.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Support</div><br>
                       <p id="addons">
                           Deployment support <br>
@@ -368,9 +370,7 @@
         </footer>
       </main>
     </div>
-    <div><a href="#top"><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored to-top" id="to-top">
-      <i class="material-icons">keyboard_arrow_up</i>
-    </button></a>
+    <div><a href="#" class="back-to-top">Back to Top</a>
     </div>
   </body>
 </html>
