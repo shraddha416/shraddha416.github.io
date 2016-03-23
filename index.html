@@ -16,17 +16,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/index.js"></script>
     <script>
+     $(function() {
+    $("img.lazy").lazyload(); });
+     $(".mdl-layout__drawer,.mdl-layout__obfuscator").click(function(){
+  $(".mdl-layout__drawer,.mdl-layout__obfuscator").removeClass("is-visible");
+ });
     $(document).ready(function(){});
     </script>
-
   </head>
   <body style="font-family:Roboto,sans-serif;">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <!-- ****************************** Header ************************** -->
       <header class="mdl-layout__header">
-        <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
           <span class="mdl-layout__title">TuteEasy</span>
           <div class="mdl-layout-spacer"></div>
@@ -43,7 +45,7 @@
         <span class="mdl-layout__title">TuteEasy</span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#services">Services</a>
-          <a class="mdl-navigation__link" href="#procedure">Procedure</a>
+          <a class="mdl-navigation__link" href="procedure.html">Procedure</a>
           <a class="mdl-navigation__link" href="pricing.html">Pricing</a>
           <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
         </nav>
@@ -301,7 +303,7 @@
               </div>
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">  
-                  <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" align="center">
+                  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" align="center">
                       <img src="img/understand.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Understanding your UI</div><br>
                       <p id="addons">
@@ -309,7 +311,7 @@
                               fragmenting your UI flow into user tasks
                       </p>
                   </div>
-                  <div class="mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" align="center" style="">
+                  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" align="center" style="">
                       <img src="img/design.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Instruction Design</div><br>
                       <p id="addons">
@@ -318,7 +320,7 @@
                               Tutorial Design
                       </p>
                   </div>
-                  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
+                  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" align="center">
                       <img src="img/local.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Localisation</div><br>
                       <p id="addons">
@@ -328,9 +330,7 @@
                               Cultural connect 
                       </p>
                   </div>
-              </div>
-              <div class="mdl-grid" align="center">
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
+                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone" align="center" style="">
                   </div>
                   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center" style="">
                       <img src="img/production.png" height="100px" width="100px" class="lazy"><br><br>
@@ -340,7 +340,7 @@
                           Tutorial Hosting
                       </p>
                   </div>
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone" align="center">
+                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-phone" align="center">
                       <img src="img/support.png" height="100px" width="100px" class="lazy"><br><br>
                       <div class="typo-styles__demo mdl-typography--title">Support</div><br>
                       <p id="addons">
