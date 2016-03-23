@@ -33,6 +33,7 @@
     justify-content: stretch;
     line-height: normal;
     padding: 16px;
+    overflow:auto;
     -webkit-perspective-origin: 165px 56px;
     perspective-origin: 165px 56px;
     -webkit-transform-origin: 165px 56px;
@@ -40,12 +41,11 @@
     transform-origin: 165px 56px;
     box-sizing: border-box;
 }
-.mdl-grid{
-    width:950px;
+.mdl-layout__header .mdl-layout__drawer-button {
+    position: absolute;
+    color: #fff;
+    background-color: rgb(33,150,243);
 }
-    </style>
-  <!--  <script src="js/jquery.mobile-1.4.5.js"></script>---->
-  <style>
   .mdl-textfield {
     width: 90%;
     max-width: 100%;
@@ -56,13 +56,33 @@
     .material-icons {
     vertical-align: middle;
 }
-.mdl-card__supporting-text {
-    color: rgba(0,0,0,.54);
+.mdl-card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     font-size: 16px;
-    line-height: 18px;
+    font-weight: 400;
+    min-height: 50px;
+    width: auto;
+    z-index: 1;
+    width:70%;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.mdl-card__supporting-text {
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    line-height: 24px;
     overflow: hidden;
-    padding: 16px;
-    width: 90%;
+    padding: 0px;
+    width:85%;
 }
 .mdl-textfield__input {
     /* border: 1px; */
@@ -75,6 +95,34 @@
     background: 0 0;
     text-align: left;
     color: inherit;
+}
+.mdl-layout__header-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    background-color: rgb(33,150,243);
+    margin: 0;
+    padding: 0 205px 0 205px;
 }
 .mdl-textfield__label {
     bottom: 0;
@@ -93,45 +141,70 @@
     padding: 0 5px;
 }
   </style>
-   <script>
-    </script>
    </head>
    <body style="font-family:Roboto,sans-serif;">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <!--header-->
+    <header class="mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">TuteEasy</span>
+          <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="#services">Services</a>
+            <a class="mdl-navigation__link" href="procedure.html">Procedure</a>
+            <a class="mdl-navigation__link" href="pricing.html" >Pricing</a>
+            <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+          </nav>
+        </div>
+    </header>
+      <div class=" mdl-layout--small-screen-only mdl-layout__drawer">
+        <span class="mdl-layout__title">TuteEasy</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#services">Services</a>
+          <a class="mdl-navigation__link" href="#procedure">Procedure</a>
+          <a class="mdl-navigation__link" href="pricing.html">Pricing</a>
+          <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content grid" align="center">
         <div class="typo-styles__demo mdl-typography--display-1" align="center">About Us</div><br>
         <div class="typo-styles__demo mdl-typography--display-1" align="center">Contact Us</div><br>
-        <div class="mdl-grid" align='center'>
-            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" align="center">
-              <div class="mdl-card__supporting-text">
-                    <img src="c.png" height="100px" width="100px"><br>
+        <div class="" align="center">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-grid" align="center">
+              <div class="mdl-card__supporting-text"><br>
+                <img src="c.png" height="100px" width="100px"><br>
                     <div class="footer-add"  style="vertical-align:middle;"><br>
                         <div class="mdl-grid">
                             <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
-                                <i class="material-icons">location_on</i>&nbsp Address<br>
-                            </div>
+                                <i class="material-icons">location_on</i><span class="mdl-cell--hide-phone">&nbsp Address<br>
+                            </span></div>
                             <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
-                                :CM-12, 3rd Floor, SINE, CSRE building, IIT Bombay, Powai - 400076
+                                : CM-12, 3rd Floor, SINE, CSRE building, IIT Bombay, Powai - 400076
                             </div>
                         </div> 
                         <div class="mdl-grid">
                             <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
-                                <i class="material-icons">phone</i>&nbsp Phone Number<br>
-                            </div>
+                                <i class="material-icons">phone</i><span class="mdl-cell--hide-phone">&nbsp Phone Number<br>
+                            </span>
+                        </div>
                             <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
-                                :+91 9167941487
+                                : +91 9167941487
                             </div>
                         </div> 
                         <div class="mdl-grid">
                             <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone" align="left">
-                                <i class="material-icons">email</i>&nbsp Email<br>
+                                <i class="material-icons">email</i><span class="mdl-cell--hide-phone">&nbsp Email</span>
                             </div>
                             <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone" align="left">
-                                :work@triangularstudios.com 
+                                : work@triangularstudios.com 
                             </div>
                         </div>
                     </div> 
-                </div>
-            </div>  
-            <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" align="center">
+              </div>
+            </div><br> 
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-grid" align="center">
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">Stay With Us</h2>
               </div>
@@ -156,11 +229,23 @@
                     </div>
                     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
                         Send Message
-                    </button>
-                </div>
+                    </button><br><br>
+                  </div>
                 </form>       
               </div> 
             </div>
         </div>
+        <!--contact-->
+        <footer class="mdl-mega-footer" id="contact">
+          <div class="mdl-mega-footer__bottom-section">
+            <div class="mdl-logo">Title</div>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+    </main>
+    </div>
     </body>
     </html>

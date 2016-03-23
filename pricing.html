@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/jquery.min.js"></script>
   	<script src="js/jquery-ui.js"></script>
-  	<link rel="stylesheet" href="css/animate.css">
   	<link rel="stylesheet" href="css/jquery-ui.css">
-  	<script src="js/wow.min.js"></script>
     <link rel="stylesheet" href="css/pricing.css">
     <script>
     $(function() {
@@ -19,72 +17,95 @@
       min: 100,
       max: 20000,
       slide: function( event, ui ) {
-        $( "#amount" ).val(ui.value );
+        $( "#amount" ).val(ui.value);
+        $("cost").val(ui.value*0.5);
       }
     });
     $( "#amount" ).val($( "#slider-range-min" ).slider( "value" ) );
     $( "#cost" ).val(" Rs."+$( "#slider-range-min" ).slider( "value" )*0.5);
 
   });
-     new WOW().init();
     </script>
   </head>
-  <body>
-    <!-- Wide card with share menu button -->
-    <div class="mdl-grid"  align="center">
-    	<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet wow slideInLeft">
-    		<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-    			<div class="mdl-card__title">
-    				<h2 class="mdl-card__title-text" style="font-weight: 500;">Starter</h2>
-    			</div>
-    			<div class="mdl-card__supporting-text pricing-head" style="padding:0px 16px;">
-    				<p><h3 style="font-weight: 100;">Limited<br>Views</h3></p><br>
-    			</div>
-    			<div class="mdl-card__supporting-text pricing-head2" style="padding:10px 24px;">
-    				<p style="margin-bottom:0px;">FEATURES</p>
-    			</div>
-    			<div class="mdl-card__supporting-text">
-    				<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-		    			<tbody>
-		    				<tr>
-				     	 		<td>5 Tutorials Hosting</td>
-				      		</tr>
-				      		<tr>
-				      			<td>Advance Free Tutorials</td>
-				      		</tr>
-				      		<tr>
-				      			<td>Limited Tutorial Views</td>
-				      		</tr>
-				      		<tr>
-				      			<td>Basic Analytics</td>
-				      		</tr>
-				      		<tr>
-				      			<td>Limited Tutorial Updates</td>
-				      		</tr>
-				        </tbody>
-					</table>
-		      	</div>
-		      	<div class="mdl-card__actions mdl-card--border">
-		        	<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-		         		 MONTHLY COST: FREE
-		        	</a>
-		      	</div>
-		    </div>
-		</div>
-		<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet wow slideInUp" align="center">
-			<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-    			<div class="mdl-card__title">
-    				<h2 class="mdl-card__title-text" style="font-weight: 500;">Economy</h2>
-    			</div>
-    			<div class="mdl-card__supporting-text pricing-head" align="center" style="padding:0px 16px;">
-    				<p><h3 style="font-weight: 100;margin:0px;"><input type="text" id="amount" readonly style="border:0; color:rgb(33,150,243);font-size:34px;text-align:center;width:100px;"><br>Views</h3></p>
-    				<p id="slider-range-min"></p>
-    			</div>
-    			<div class="mdl-card__supporting-text pricing-head2" style="padding:10px 24px;">
-    				<p style="margin-bottom:0px;">FEATURES</p>
-    			</div>
-    			<div class="mdl-card__supporting-text">
-    				<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <body style="font-family:Roboto,sans-serif;">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- ****************************** Header ************************** -->
+       	<header class="mdl-layout__header">
+       		<div class="mdl-layout-icon"></div>
+       		<div class="mdl-layout__header-row">
+       			<span class="mdl-layout__title">TuteEasy</span>
+       			<div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+            			<a class="mdl-navigation__link" href="#services">Services</a>
+            			<a class="mdl-navigation__link" href="procedure.html">Procedure</a>
+            			<a class="mdl-navigation__link" href="pricing.html" >Pricing</a>
+            			<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+          			</nav>
+        	</div>
+      	</header>
+      	<div class=" mdl-layout--small-screen-only mdl-layout__drawer">
+        	<span class="mdl-layout__title">TuteEasy</span>
+        	<nav class="mdl-navigation">
+          		<a class="mdl-navigation__link" href="#services">Services</a>
+          		<a class="mdl-navigation__link" href="#procedure">Procedure</a>
+          		<a class="mdl-navigation__link" href="pricing.html">Pricing</a>
+          		<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+        	</nav>
+      	</div>
+    	<!-- Wide card with share menu button -->
+    	<main class="mdl-layout__content">
+    		<div class="mdl-grid"  align="center">
+    				<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-phone" align="center">
+    					<div class="mdl-card__title">
+    						<h2 class="mdl-card__title-text" style="font-weight: 500;">Starter</h2>
+    					</div>
+    					<div class="mdl-card__supporting-text pricing-head" style="padding:0px 16px;">
+    						<p><h3 style="font-weight: 100;">Limited<br>Views</h3></p><br>
+    					</div>
+    					<div class="mdl-card__supporting-text pricing-head2" style="padding:10px 24px;">
+    						<p style="margin-bottom:0px;">FEATURES</p>
+    					</div>
+    					<div class="mdl-card__supporting-text">
+    						<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    							<tbody>
+    								<tr>
+				     	 				<td>5 Tutorials Hosting</td>
+				      				</tr>
+				      				<tr>
+				      					<td>Advance Free Tutorials</td>
+				      				</tr>
+				      				<tr>
+				      					<td>Limited Tutorial Views</td>
+				      				</tr>
+				      				<tr>
+				      					<td>Basic Analytics</td>
+				      				</tr>
+				      				<tr>
+				      					<td>Limited Tutorial Updates</td>
+				      				</tr>
+				        		</tbody>
+							</table>
+		      	   		</div>
+		      	   		<div class="mdl-card__actions mdl-card--border">
+		        			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+		         		 		MONTHLY COST: FREE
+		        			</a>
+		      			</div>
+		    		</div>
+		    		<div class="mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-phone mdl-shadow--4dp" align="center">
+    					<div class="mdl-card__title">
+    						<h2 class="mdl-card__title-text" style="font-weight: 500;">Economy</h2>
+    					</div>
+    					<div class="mdl-card__supporting-text pricing-head" align="center" style="padding:0px 16px;">
+    						<p><h3 style="font-weight: 100;margin:0px;"><input type="text" id="amount" readonly style="border:0; color:rgb(33,150,243);font-size:34px;text-align:center;width:100px;"><br>Views</h3></p>
+    						<p id="slider-range-min"></p>
+    					</div>
+    					<div class="mdl-card__supporting-text pricing-head2" style="padding:10px 24px;">
+    						<p style="margin-bottom:0px;">FEATURES</p>
+    					</div>
+    					<div class="mdl-card__supporting-text">
+    						<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
 		    			<tbody>
 		    				<tr>
 				     	 		<td>10 Tutorials Hosting</td>
@@ -109,11 +130,9 @@
 		         		 MONTHLY COST:<input type="text" id="cost" readonly style="border:0;width:50px;background-color:rgb(33,150,243);color:white;">
 		        	</a>
 		      	</div>
-		    </div>
 		</div>
-		<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet wow slideInRight" align="center">
-		<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-    			<div class="mdl-card__title">
+		<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-phone" align="center">		
+			<div class="mdl-card__title">
     				<h2 class="mdl-card__title-text" style="font-weight: 500;">Premium</h2>
     			</div>
     			<div class="mdl-card__supporting-text pricing-head" style="padding:0px 16px;">
@@ -149,8 +168,18 @@
 		        	</a>
 		      	</div>
 		    </div>
-		</div>
-    </div>
-    
+        </div>
+        <!--contact-->
+        <footer class="mdl-mega-footer" id="contact">
+          <div class="mdl-mega-footer__bottom-section">
+            <div class="mdl-logo">Title</div>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>    
   </body>
 </html>

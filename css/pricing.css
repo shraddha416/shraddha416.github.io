@@ -1,20 +1,55 @@
 .mdl-grid{
-    width:950px;
+    width:70%;
 }
-.demo-card-wide.mdl-card {
+.mdl-card {
   width: 90%;
 }
-.demo-card-wide > .mdl-card__title {
+.mdl-card__title {
   color: #fff;
   background-color: rgb(33,150,243);
 
 }
-.demo-card-wide > .mdl-card__menu {
+.mdl-card__menu {
   color: #fff;
 }
 body {
-    margin: 10px;
+    margin: 0px;
 }
+.mdl-layout__header .mdl-layout__drawer-button {
+    position: absolute;
+    color: rgb(255,255,255);
+    background-color: transparent;
+    margin:20px;
+}
+.mdl-layout__header-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    margin: 0;
+    padding: 0 205px 0 205px;
+    background-color: rgb(33,150,243);
+}
+
 .pricing-head{
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	text-align: center;
@@ -27,7 +62,7 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #000;
+    color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -65,7 +100,7 @@ body {
     font-size: 3rem;
     line-height: 18px;
     overflow: hidden;
-    padding: 0px;
+    padding-bottom: 10px;
     width: auto;
     font-weight: 200;
 }
@@ -109,7 +144,7 @@ body {
     color: #fff;
 }
 .ui-slider-horizontal {
-    height: .2em;
+    height: .33em;
 }
 .ui-widget-header {
     border: 1px solid #e78f08;
@@ -125,7 +160,7 @@ body {
     position: absolute;
     z-index: 2;
     width: 0.4em;
-    height: 0.4em;
+    height: 0.45em;
     cursor: default;
     -ms-touch-action: none;
     touch-action: none;
